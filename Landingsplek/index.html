@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Landingsplek</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+		<script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>		
+		<script src="scripts/main.js" defer></script>
+
+	</head>
+	<body>
+
+		<div class="container">
+			<div class="item1">
+				<h2 id="title">Current weather</h2>
+				<form>
+					<fieldset id="fieldset">
+						<label for="city"></label>
+							<input type="text" name="city" id="city" placeholder="City" />
+							<input type="button" id="getWeather" value="Search" />
+					</fieldset>
+				</form>
+				<article id="weather"></article>
+			</div>
+	
+
+			<div class="item2">
+				<h2>Landings places</h2>
+				<div id="map"></div>
+			</div>
+
+			<div class="container1">
+			<div class="item3">
+				<div id="buttons">
+					<button type="button" id="Schiphol">Schiphol</button>
+					<button type="button" id="Lelystad">Lelystad</button>
+					<button type="button" id="Rotterdam">Rotterdam</button>
+					<button type="button" id="Enschede">Enschede</button>
+				</div>
+				<article id="weather1"> Click on the buttons up here to show the current <br> weather of the landing spot.<br><br> to make sure the peolple are coming home <br> from Mars can land safe</article>
+			</div>
+
+
+			</div>
+		</div>
+	</body>
+</html>
